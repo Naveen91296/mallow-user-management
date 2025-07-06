@@ -1,0 +1,154 @@
+:root {
+  /* Custom header variables */
+  --header-background: #1e293b;
+  --error-hover: #dc2626;
+
+  /* Primary Brand Colors */
+  --primary-color: #1890ff;
+  --primary-hover: #40a9ff;
+  --primary-active: #096dd9;
+  --primary-light: #e6f7ff;
+  --primary-dark: #0050b3;
+
+  /* Secondary Colors */
+  --secondary-color: #52c41a;
+  --secondary-hover: #73d13d;
+  --secondary-light: #f6ffed;
+
+  /* Status Colors */
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+  --error-color: #ff4d4f;
+  --info-color: #1890ff;
+
+  /* Neutral Colors */
+  --white: #ffffff;
+  --black: #000000;
+  --text-primary: #262626;
+  --text-secondary: #595959;
+  --text-disabled: #bfbfbf;
+  --text-placeholder: #bfbfbf;
+  --border-color: #d9d9d9;
+  --border-light: #f0f0f0;
+  --background-light: #fafafa;
+  --background-grey: #f5f5f5;
+
+  /* Gradient */
+  --gradient-primary: linear-gradient(135deg, #1890ff 0%, #096dd9 100%);
+  --gradient-secondary: linear-gradient(135deg, #52c41a 0%, #389e0d 100%);
+
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-xxl: 24px;
+  --font-size-xxxl: 32px;
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-sm: 1.2;
+  --line-height-base: 1.5;
+  --line-height-lg: 1.8;
+
+  /* Spacing Scale */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+  --spacing-xxxl: 64px;
+
+  /* Border Radius */
+  --border-radius-xs: 2px;
+  --border-radius-sm: 4px;
+  --border-radius-base: 6px;
+  --border-radius-lg: 8px;
+  --border-radius-xl: 12px;
+  --border-radius-xxl: 16px;
+  --border-radius-round: 50%;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-base: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--text-primary);
+  background-color: var(--background-light);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+#root {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  :root {
+    --font-size-base: 14px;
+    --font-size-lg: 16px;
+    --font-size-xl: 18px;
+    --font-size-xxl: 20px;
+    --font-size-xxxl: 28px;
+  }
+}
+
+/* Segmented Button Styles */
+.custom-segmented {
+  background: transparent;
+}
+
+.custom-segmented .ant-segmented-item {
+  background: var(--white) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--border-radius-base) !important;
+  margin: 0 var(--spacing-xs) !important;
+  color: var(--text-secondary) !important;
+}
+
+.custom-segmented .ant-segmented-item-selected {
+  background: var(--white) !important;
+  border: 1px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.custom-segmented .ant-segmented-item-selected .ant-segmented-item-label {
+  color: var(--primary-color) !important;
+}
+
+.custom-segmented .ant-segmented-item-selected .anticon {
+  color: var(--primary-color) !important;
+}

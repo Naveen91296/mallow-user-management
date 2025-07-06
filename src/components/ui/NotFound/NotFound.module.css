@@ -1,0 +1,33 @@
+.notFoundContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--white);
+  padding: var(--spacing-lg);
+}
+
+.notFoundResult {
+  max-width: 500px;
+  text-align: center;
+}
+
+.notFoundResult .ant-result-title {
+  color: var(--text-primary);
+  font-size: var(--font-size-xxxl);
+  font-weight: var(--font-weight-bold);
+}
+
+.notFoundResult .ant-result-subtitle {
+  color: var(--text-secondary);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.notFoundResult .ant-btn {
+  height: 40px;
+  padding: 0 var(--spacing-lg);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-base);
+}

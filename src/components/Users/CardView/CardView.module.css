@@ -1,0 +1,132 @@
+.cardContainer {
+  padding: var(--spacing-sm);
+  height: calc(100vh - 300px);
+  overflow-y: auto;
+}
+
+.cardsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  justify-content: flex-start;
+}
+
+.cardWrapper {
+  width: clamp(240px, 100%, 280px);
+  position: relative;
+}
+
+.userCard {
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-duration) ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.userCard:hover {
+  box-shadow: var(--shadow-base);
+}
+
+.cardContent {
+  padding: var(--spacing-md);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.avatarContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.avatar {
+  transition: opacity var(--transition-duration) ease;
+}
+
+.hoverOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition-duration) ease;
+  pointer-events: none;
+}
+
+.cardWrapper:hover .hoverOverlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cardWrapper:hover .userCard {
+  background-color: var(--background-grey);
+}
+
+.cardWrapper:hover .userName,
+.cardWrapper:hover .userEmail {
+  color: var(--text-secondary);
+}
+
+.actionIcons {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.iconButton {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color var(--transition-duration) ease;
+  color: var(--white);
+  font-size: var(--font-size-md);
+}
+
+.iconButton:first-child {
+  background-color: var(--primary-color);
+}
+
+.iconButton:first-child:hover {
+  background-color: var(--primary-hover);
+}
+
+.iconButton:last-child {
+  background-color: var(--error-color);
+}
+
+.iconButton:last-child:hover {
+  background-color: var(--error-hover);
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  width: 100%;
+}
+
+.userName {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  margin: 0;
+  line-height: var(--line-height-sm);
+  transition: color var(--transition-duration) ease;
+}
+
+.userEmail {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: var(--line-height-sm);
+  transition: color var(--transition-duration) ease;
+}

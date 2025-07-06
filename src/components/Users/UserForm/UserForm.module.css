@@ -1,0 +1,31 @@
+.userForm {
+  padding: var(--spacing-md) 0;
+}
+
+.formItem {
+  margin-bottom: var(--spacing-md);
+}
+
+.formItem .ant-form-item-label > label {
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  font-size: var(--font-size-sm);
+}
+
+.formItem .ant-input {
+  height: 40px;
+  border-radius: var(--border-radius-base);
+  font-size: var(--font-size-sm);
+}
+
+.formItem .ant-input::placeholder {
+  color: var(--text-placeholder);
+}
+
+.formItem .ant-form-item-required::before {
+  color: var(--error-color) !important;
+}
+
+.userForm .ant-form-item-required::before {
+  color: var(--error-color) !important;
+}

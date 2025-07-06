@@ -1,0 +1,33 @@
+.header {
+  background: var(--header-background);
+  padding: var(--spacing-md) var(--spacing-lg);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: var(--shadow-base);
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.userName {
+  color: var(--white);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+}
+
+.logoutButton {
+  background-color: var(--error-color);
+  border-color: var(--error-color);
+  font-weight: var(--font-weight-medium);
+  min-width: auto;
+  padding: 0 8px;
+}
+
+.logoutButton:hover {
+  background-color: var(--error-hover);
+  border-color: var(--error-hover);
+}

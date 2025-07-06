@@ -1,0 +1,23 @@
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xxxl);
+  text-align: center;
+  min-height: 300px;
+}
+
+.emptyImage {
+  width: 120px;
+  height: 120px;
+  margin-bottom: var(--spacing-lg);
+  opacity: 0.6;
+}
+
+.emptyMessage {
+  color: var(--text-secondary);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}

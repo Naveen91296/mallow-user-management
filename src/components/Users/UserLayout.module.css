@@ -1,0 +1,114 @@
+.userLayout {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  height: calc(100vh - var(--spacing-lg));
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-semibold);
+  margin: 0;
+  color: var(--text-primary);
+  line-height: var(--line-height-sm);
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.searchInput {
+  width: 280px;
+  height: 36px;
+}
+
+.searchInput .ant-input {
+  height: 36px;
+  font-size: var(--font-size-sm);
+  border-radius: var(--border-radius-base);
+}
+
+.createButton {
+  height: 36px;
+  font-weight: var(--font-weight-medium);
+  padding: 0 var(--spacing-md);
+  border-radius: var(--border-radius-base);
+}
+
+.viewToggle {
+  width: 162px;
+  margin-left: 16px;
+}
+
+.content {
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-base);
+  height: calc(100vh - 245px);
+  padding: 0 var(--spacing-lg);
+}
+
+/* Delete Modal Styles */
+.deleteUserInfo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.deleteUserDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.deleteUserName {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-md);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.deleteUserEmail {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  margin: 0;
+}
+
+/* Create User Drawer Styles */
+.drawerFooter {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) 0;
+  border-top: 1px solid var(--border-color);
+  margin-top: var(--spacing-lg);
+}
+
+.drawerFooter .ant-btn {
+  height: 36px;
+  padding: 0 var(--spacing-md);
+  border-radius: var(--border-radius-base);
+  font-weight: var(--font-weight-medium);
+}
