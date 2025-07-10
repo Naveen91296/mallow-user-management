@@ -19,6 +19,9 @@ export const postCall = async (
     const response = await axiosClient.post(URL, payload, config);
     return response?.data || {};
   } catch (error: any) {
+    if (error.response && error.response.data) {
+      return error.response.data;
+    }
     throw error;
   }
 };
