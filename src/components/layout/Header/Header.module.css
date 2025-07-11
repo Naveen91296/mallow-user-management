@@ -19,15 +19,4 @@
   font-weight: var(--font-weight-medium);
 }
 
-.logoutButton {
-  background-color: var(--error-color);
-  border-color: var(--error-color);
-  font-weight: var(--font-weight-medium);
-  min-width: auto;
-  padding: 0 8px;
-}
 
-.logoutButton:hover {
-  background-color: var(--error-hover);
-  border-color: var(--error-hover);
-}

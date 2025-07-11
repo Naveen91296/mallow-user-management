@@ -32,7 +32,6 @@ const Header = () => {
             danger
             icon={<LogoutOutlined />}
             onClick={() => setShowLogoutModal(true)}
-            className={styles.logoutButton}
           />
         </div>
       </header>

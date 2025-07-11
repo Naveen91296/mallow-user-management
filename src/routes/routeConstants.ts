@@ -1,7 +1,7 @@
 export const ROUTES = {
   ROOT: "/",
-  LOGIN: "/login",
+  LOGIN: "/login",               // login
   USERS: "/users",
-  USERS_TABLE: "/users/table",
-  USERS_CARDS: "/users/cards",
+  USERS_TABLE: "/users/table",  // users table view
+  USERS_CARDS: "/users/cards",  // users cards view
 } as const;
