@@ -12,11 +12,12 @@ export const accountLoginServices = async (
   if (response?.token) {
     Cookies.set("accessToken", response.token, {
       expires: 7,
-      // secure: true,
       sameSite: "strict",
     });
 
-    navigate(ROUTES.USERS_TABLE);
+    const path = localStorage.getItem("historyPath");
+    navigate(path || ROUTES.USERS_TABLE);
+    localStorage.removeItem("historyPath");
   }
 
   return response;
